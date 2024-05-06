@@ -146,7 +146,6 @@ header {
 }
 .btn {
   font-family: var(--fonte-padrao);
-
 }
 .inscrever {
   background-image: linear-gradient(to left, #d77fd6, #b772ff);
@@ -172,6 +171,7 @@ header {
   text-decoration: underline;
   cursor: pointer;
 }
- .apresentacao_img {
-    max-width: 70%;
-  }
+.apresentacao_img {
+  max-width: 70%;
+  margin: 0 auto;
+}
