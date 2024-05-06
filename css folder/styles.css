@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: SpartanMedium;
+  src: url(../fonts/Spartan-Medium.ttf);
+}
+:root {
+  --fonte-padrao: SpartanMedium;
+  --fonte-padrao-peso: 500;
+
+  --tamanho-fonte-links: 1.5rem;
+  --color-fonte-links: #000000;
+
+  --color-botao-links: #d77fd6;
+}
+/* cabecalho  */
+header {
+  font-family: var(--fonte-padrao);
+  font-weight: var(--fonte-padrao-peso);
+}
+.nav_mobile_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.nav_list {
+  display: flex;
+  align-items: center;
+}
+.nav_list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav_mobile_list_items {
+  margin: 0 15px;
+}
+.nav_links {
+  text-decoration: none;
+  font-size: var(--tamanho-fonte-links);
+  color: var(--color-fonte-links);
+}
+
+.login_button button {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.botao_delogin {
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color-botao-links);
+  border: 2px solid var(--color-botao-links);
+  border-radius: 6px;
+  position: relative;
+}
+.links_botao_login {
+  color: black;
+  text-decoration: none;
+}
+.botao_delogin::before {
+  position: absolute;
+  content: "";
+  background: var(--color-botao-links);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.botao_delogin::before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+.botao_delogin:hover::before {
+  top: -30px;
+  left: -30px;
+}
+.botao_detestegratis {
+  background-image: linear-gradient(to left, #d77fd6, #b772ff);
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color-botao-links);
+  border: 2px solid var(--color-botao-links);
+  border-radius: 6px;
+  position: relative;
+}
+.links_botao_testegratis {
+  color: white;
+  text-decoration: none;
+}
