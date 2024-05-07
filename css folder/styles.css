@@ -46,6 +46,9 @@ header {
   font-size: var(--tamanho-fonte-links);
   color: var(--color-fonte-links);
 }
+.nav_links:hover{
+  text-decoration: underline;
+}
 
 .login_button button {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -128,7 +131,7 @@ header {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 5%;
+  padding: 0 5% 0 5% ;
   align-items: center;
 }
 .apresentacao_container h1 {
@@ -173,5 +176,15 @@ header {
 }
 .apresentacao_img {
   max-width: 70%;
-  margin: 0 auto;
+}
+/* empresas parceiras  */
+.empresas_parceiras_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  background-image: linear-gradient(#B772FF, #CE7BE3, #E282CA);
+}
+.empresas_img{
+  width: 20%;
 }
